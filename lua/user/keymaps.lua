@@ -5,6 +5,13 @@ local term_opts = { silent = true }
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
 
+-- Modes
+-- normal mode -> "n"
+-- insert mode -> "i"
+-- visual mode -> "v"
+-- visual block mode -> "x"
+-- terminal mode -> "t"
+-- command mode -> "c"
 
 -- Use alt + hjkl to resize windows
 keymap("n", "<M-j>", ":resize -2<CR>", opts)
@@ -48,4 +55,4 @@ keymap("n", "<Leader>e", "$", opts)
 keymap("n", "<Leader>b", "0", opts)
 
 -- Close actual buffer whithout closing window
-keymap("n", "cb", ":Bclose<CR>", opts)
+-- TODO: keymap("n", "cb", ":Bclose<CR>", opts)
