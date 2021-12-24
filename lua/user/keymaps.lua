@@ -13,11 +13,16 @@ local keymap = vim.api.nvim_set_keymap
 -- terminal mode -> "t"
 -- command mode -> "c"
 
+-- Remap leader key
+keymap("", ",", "<Nop>", opts)
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
+
 -- Use alt + hjkl to resize windows
-keymap("n", "<M-j>", ":resize -2<CR>", opts)
-keymap("n", "<M-k>", ":resize +2<CR>", opts)
-keymap("n", "<M-h>", ":vertical resize -2<CR>", opts)
-keymap("n", "<M-l>", ":vertical resize +2<CR>", opts)
+keymap("n", "<C-Up>", ":resize -2<CR>", opts)
+keymap("n", "<C-Down>", ":resize +2<CR>", opts)
+keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
+keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 -- I hate escape more than anything else
 keymap("i", "jj", "<Esc>", opts)
@@ -25,15 +30,14 @@ keymap("i", "jj", "<Esc>", opts)
 -- Easy CAPS
 keymap("n", "<c-u>", "<ESC>viwUi", opts)
 keymap("n", "<c-u>", "viwUi<ESC>", opts)
--- TAB in general mode will move to text buffer
-keymap("n", "<Leader><TAB>", ":bnext<CR>", opts)
--- SHIFT-TAB will go back
-keymap("n", "<Leader><S-TAB>", ":bprevious<CR>", opts)
+-- Navegation between buffers
+keymap("n", "<S-l>", ":bnext<CR>", opts)
+keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- Alternate way to save
 keymap("n", "<Leader>s", ":w<CR>", opts)
 -- Alternate way to quit
-keymap("n", "qq", ":q<CR>", opts)
+keymap("n", "<Leader>q", ":q<CR>", opts)
 
 -- <TAB>: completion.
 -- TODO: inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
@@ -48,14 +52,13 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
--- Go to the end of the line
-keymap("n", "<Leader>e", "$", opts)
-
--- Go to the beggining of the line
-keymap("n", "<Leader>b", "0", opts)
-
 -- Close actual buffer whithout closing window
 -- TODO: keymap("n", "cb", ":Bclose<CR>", opts)
 
 -- Open NERDTree
-keymap("n", "nn", ":NERDTree<CR>", opts)
+keymap("n", "<Leader>e", ":NERDTree<CR>", opts)
+
+-- Telescope
+keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
+-- keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
+-- keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)

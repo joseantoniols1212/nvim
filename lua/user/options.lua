@@ -1,5 +1,3 @@
-vim.cmd [[let g:mapleader = ","]]
-
 vim.opt.hidden = true                        --  Required to keep multiple buffers open multiple buffers
 vim.opt.scrolloff = 5                        --  Keeps the selected line n lines above and under the borders
 vim.opt.encoding = "utf-8"                   --  The encoding displayed
