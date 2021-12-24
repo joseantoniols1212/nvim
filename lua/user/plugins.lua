@@ -47,7 +47,7 @@ return packer.startup(function(use)
   use "preservim/nerdtree" -- File explorer tree
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-nvim-lua"
-
+  use 'lervag/vimtex' -- Allows Latex
   -- colorscheme
   use "lunarvim/darkplus.nvim"
 

@@ -1,6 +1,6 @@
 local opts = { noremap = true, silent = true }
 
-local term_opts = { silent = true }
+-- local term_opts = { silent = true } -- Usar en caso de usar atajos en modo terminal
 
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
@@ -33,7 +33,7 @@ keymap("n", "<Leader><S-TAB>", ":bprevious<CR>", opts)
 -- Alternate way to save
 keymap("n", "<Leader>s", ":w<CR>", opts)
 -- Alternate way to quit
-keymap("n", "<Leader>qq", ":q<CR>", opts)
+keymap("n", "qq", ":q<CR>", opts)
 
 -- <TAB>: completion.
 -- TODO: inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"

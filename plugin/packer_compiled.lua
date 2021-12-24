@@ -148,6 +148,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/joseantoniols1212/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
+  },
+  vimtex = {
+    loaded = true,
+    path = "/home/joseantoniols1212/.local/share/nvim/site/pack/packer/start/vimtex",
+    url = "https://github.com/lervag/vimtex"
   }
 }
 

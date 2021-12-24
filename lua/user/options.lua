@@ -1,7 +1,7 @@
 vim.cmd [[let g:mapleader = ","]]
 
 vim.opt.hidden = true                        --  Required to keep multiple buffers open multiple buffers
-vim.opt.scrolloff = 5                        --  Keeps the selected line n lines above and under the borders 
+vim.opt.scrolloff = 5                        --  Keeps the selected line n lines above and under the borders
 vim.opt.encoding = "utf-8"                   --  The encoding displayed
 vim.opt.pumheight = 10                       --  Makes popup menu smaller
 vim.opt.fileencoding = "utf-8"               --  The encoding written to file
@@ -26,7 +26,4 @@ vim.opt.timeoutlen = 500                     --  By default timeoutlen is 1000 m
 vim.opt.clipboard = "unnamedplus"            --  Copy paste between vim and everything else
 vim.opt.scrolloff = 8                        --  Offset between last line showed and window border
 vim.opt.termguicolors = true
-
-
-vim.cmd [[au! BufWritePost $MYVIMRC source %]]      -- auto source when writing to init.vm alternatively you can run :source $MYVIMRC
-
+vim.opt.signcolumn = "yes"                   -- Always show signcolumn so it doesn't shift every time
