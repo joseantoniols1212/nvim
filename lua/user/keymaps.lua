@@ -33,11 +33,11 @@ keymap("n", "<Leader><S-TAB>", ":bprevious<CR>", opts)
 -- Alternate way to save
 keymap("n", "<Leader>s", ":w<CR>", opts)
 -- Alternate way to quit
-keymap("n", "<Leader>q", ":q<CR>", opts)
+keymap("n", "<Leader>qq", ":q<CR>", opts)
 
 -- <TAB>: completion.
 -- TODO: inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
- 
+
 -- Better tabbing
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
@@ -56,3 +56,6 @@ keymap("n", "<Leader>b", "0", opts)
 
 -- Close actual buffer whithout closing window
 -- TODO: keymap("n", "cb", ":Bclose<CR>", opts)
+
+-- Open NERDTree
+keymap("n", "nn", ":NERDTree<CR>", opts)
