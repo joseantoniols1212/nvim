@@ -55,10 +55,10 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 -- Close actual buffer whithout closing window
 -- TODO: keymap("n", "cb", ":Bclose<CR>", opts)
 
--- Open NERDTree
-keymap("n", "<Leader>e", ":Lex 30<CR>", opts)
+-- Open file explorer
+keymap("n", "<Leader>e", ":Lex 20<CR>", opts)
 
 -- Telescope
 keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
 -- keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
--- keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
+-- TODO: keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)

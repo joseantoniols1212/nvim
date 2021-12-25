@@ -3,7 +3,7 @@ if not status_ok then
   return
 end
 
-telescope.load_extension('media_files')
+-- TODO: telescope.load_extension('media_files') -- Allows media preview in telescope
 
 local actions = require "telescope.actions"
 
