@@ -114,11 +114,6 @@ _G.packer_plugins = {
     path = "/home/joseantoniols1212/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
-  nerdtree = {
-    loaded = true,
-    path = "/home/joseantoniols1212/.local/share/nvim/site/pack/packer/start/nerdtree",
-    url = "https://github.com/preservim/nerdtree"
-  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/joseantoniols1212/.local/share/nvim/site/pack/packer/start/nvim-cmp",

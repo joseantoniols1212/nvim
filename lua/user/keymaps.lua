@@ -56,7 +56,7 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 -- TODO: keymap("n", "cb", ":Bclose<CR>", opts)
 
 -- Open NERDTree
-keymap("n", "<Leader>e", ":NERDTree<CR>", opts)
+keymap("n", "<Leader>e", ":Lex 30<CR>", opts)
 
 -- Telescope
 keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
