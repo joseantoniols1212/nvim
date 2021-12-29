@@ -46,7 +46,8 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-nvim-lua"
-  use 'lervag/vimtex' -- Allows Latex
+  use 'lervag/vimtex' -- Latex autocompilation
+  use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
 
   -- colorscheme
   use "lunarvim/darkplus.nvim"

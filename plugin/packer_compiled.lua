@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "/home/joseantoniols1212/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["nvim-autopairs"] = {
+    loaded = true,
+    path = "/home/joseantoniols1212/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
+    url = "https://github.com/windwp/nvim-autopairs"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/joseantoniols1212/.local/share/nvim/site/pack/packer/start/nvim-cmp",
