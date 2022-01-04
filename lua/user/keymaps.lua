@@ -55,8 +55,8 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 -- Close actual buffer whithout closing window
 -- TODO: keymap("n", "cb", ":Bclose<CR>", opts)
 
--- Open file explorer
-keymap("n", "<Leader>e", ":Lex 20<CR>", opts)
+-- Open file explorer. NvimTree
+keymap("n", "<Leader>e", ":NvimTreeToggle<CR>", opts)
 
 -- Telescope
 keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)

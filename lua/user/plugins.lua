@@ -48,6 +48,8 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-nvim-lua"
   use 'lervag/vimtex' -- Latex autocompilation
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
+  use 'kyazdani42/nvim-web-devicons' -- Emoticons for nvim-tree (and other plugins)
+  use 'kyazdani42/nvim-tree.lua' -- File explorer tree
 
   -- colorscheme
   use "lunarvim/darkplus.nvim"
