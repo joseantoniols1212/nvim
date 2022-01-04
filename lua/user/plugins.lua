@@ -50,6 +50,7 @@ return packer.startup(function(use)
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use 'kyazdani42/nvim-web-devicons' -- Emoticons for nvim-tree (and other plugins)
   use 'kyazdani42/nvim-tree.lua' -- File explorer tree
+  use "akinsho/bufferline.nvim" -- Bufferline
 
   -- colorscheme
   use "lunarvim/darkplus.nvim"
