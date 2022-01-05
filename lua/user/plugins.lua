@@ -50,6 +50,7 @@ return packer.startup(function(use)
   use 'kyazdani42/nvim-tree.lua' -- File explorer tree
   use "akinsho/bufferline.nvim" -- Bufferline
   use "moll/vim-bbye" -- Bdelete command, it allows to close buffer whithout closing nvim
+  use "numToStr/Comment.nvim" -- Easily comment stuff
 
   -- colorscheme
   use "lunarvim/darkplus.nvim"
@@ -82,6 +83,7 @@ return packer.startup(function(use)
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
   }
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
