@@ -24,7 +24,7 @@ keymap("n", "<C-Down>", ":resize +2<CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
--- I hate escape more than anything else
+-- Escape remap
 keymap("i", "jj", "<Esc>", opts)
 
 -- Easy CAPS
@@ -38,9 +38,6 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<Leader>s", ":w<CR>", opts)
 -- Alternate way to quit
 keymap("n", "<Leader>q", ":q<CR>", opts)
-
--- <TAB>: completion.
--- TODO: inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
 -- Better tabbing
 keymap("v", "<", "<gv", opts)
@@ -62,3 +59,6 @@ keymap("n", "<Leader>e", ":NvimTreeToggle<CR>", opts)
 keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
 -- keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
 -- TODO: keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
+
+-- Formatting
+keymap("n", "<leader>t", ":lua vim.lsp.buf.formatting_sync()<cr>", opts)
