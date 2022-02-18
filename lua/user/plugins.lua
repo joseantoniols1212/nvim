@@ -49,7 +49,7 @@ return packer.startup(function(use)
   use 'kyazdani42/nvim-web-devicons' -- Emoticons for nvim-tree (and other plugins)
   use 'kyazdani42/nvim-tree.lua' -- File explorer tree
   use "akinsho/bufferline.nvim" -- Bufferline
-  use "moll/vim-bbye" -- Bdelete command, it allows to close buffer whithout closing nvim
+  use "moll/vim-bbye" -- Bdelete command, it allows to close buffer without closing nvim
   use "numToStr/Comment.nvim" -- Easily comment stuff
 
   -- colorscheme
