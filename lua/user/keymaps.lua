@@ -49,7 +49,7 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
--- Close actual buffer whithout closing window (it uses Bdelete command from moll/vim-bbye pluggin)
+-- Close actual buffer without closing window (it uses Bdelete command from moll/vim-bbye pluggin)
 keymap("n", "<Leader>c", ":Bdelete<CR>", opts)
 
 -- Open file explorer. NvimTree
