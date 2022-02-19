@@ -19,5 +19,26 @@ ls.snippets = {
 			-- function, first parameter is the function, second the Placeholders
 			-- whose text it gets as input.
 		})
+  },
+  tex = {
+    -- Matemáticas
+
+    -- General
+    snip("mm", { -- Modo matematico en texto
+      text("\\("), insert(1), text("\\)"), insert(0)
+    }),
+    snip("md", { -- Modo matematico display
+      text("\\["), insert(1), text("\\]"), insert(0)
+    }),
+    snip("R", { -- Rn
+      text("\\mathbb{R}^{"), insert(1, "n"), text("}"), insert(0)
+    }),
+    snip("fun", { -- Funcion matematica
+      text("\\("), insert(1), text("\\to "), insert(2), text(", "), insert(3),
+      text(" \\)"), insert(0)
+    }),
+    snip("cont", {
+      text("\\mathcal{C}^{"), insert(1),text("}("), insert(2), text(")"), insert(0)
+    })
   }
 }
