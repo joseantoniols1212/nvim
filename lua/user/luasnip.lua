@@ -37,8 +37,19 @@ ls.snippets = {
       text("\\("), insert(1), text("\\to "), insert(2), text(", "), insert(3),
       text(" \\)"), insert(0)
     }),
-    snip("cont", {
-      text("\\mathcal{C}^{"), insert(1),text("}("), insert(2), text(")"), insert(0)
-    })
+    snip("cont", { -- Conjunto de las funciones continuas y de derivada n-esima continua
+      text("\\mathcal{C}^{"), insert(1), text("}("), insert(2), text(")"), insert(0)
+    }),
+    snip("frac", { -- Fracciones
+      text("\\frac{"), insert(1), text("}{"), insert(2), text("}"), insert(0)
+    }),
+    snip("eq", { -- Ecuaciones
+      text("\\begin{equation}", ""), insert(1), text("\\end{equation}"), insert(0)
+    }),
+
+    -- Letras griegas
+    snip("a", {text("\\alpha")}),
+    snip("b",{text("\\beta")}),
+    snip("l", {text("\\lambda")})
   }
 }
