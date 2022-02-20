@@ -10,4 +10,4 @@ require "user.autopairs"
 require "user.nvim-tree"
 require "user.bufferline"
 require "user.comment"
-require "user.luasnip"
+require "user.luasnip" -- Aqui se escriben los snippets

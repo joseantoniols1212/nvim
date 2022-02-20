@@ -46,10 +46,36 @@ ls.snippets = {
     snip("eq", { -- Ecuaciones
       text("\\begin{equation}", ""), insert(1), text("\\end{equation}"), insert(0)
     }),
-
+    snip("lim", { -- Limites
+      text("\\lim_{"), insert(1, "n \\to \\infty"), text("}"), insert(0)
+    }),
+    snip("int", { -- Integral
+      text("\\int_{"), insert(1), text("}^{"), insert(2), text("}"),insert(0)
+    }),
+    snip("sum", { -- Sumatorio
+      text("\\sum_{"), insert(1, "n=0"), text("}^{"), insert(2, "\\infty"), text("}"), insert(0)
+    }),
+    snip("sqrt", { -- Raiz cuadrada
+      text("\\sqrt{"), insert(1), text("}"), insert(0)
+    }),
+    snip("sum", { -- Raiz cuadrada
+      text("\\sqrt{"), insert(1), text("}"), insert(0)
+    }),
     -- Letras griegas
-    snip("a", {text("\\alpha")}),
-    snip("b",{text("\\beta")}),
-    snip("l", {text("\\lambda")})
+    snip("\\a", {text("\\alpha")}),
+    snip("\\b",{text("\\beta")}),
+    snip("\\g",{text("\\gamma")}),
+    snip("\\l", {text("\\lambda")}),
+    snip("\\m", {text("\\mu")}),
+    snip("\\n", {text("\\nu")}),
+    snip("\\p", {text("\\pi")}),
+    snip("\\r", {text("\\rho")}),
+    snip("\\s", {text("\\sigma")}),
+    snip("\\f", {text("\\phi")}),
+    snip("\\x", {text("\\chi")}),
+    snip("\\c", {text("\\psi")}),
+    snip("\\v", {text("\\omega")}),
+    snip("\\dg", {text("\\digamma")}),
+    snip("\\e", {text("\\varepsilon")})
   }
 }
