@@ -40,13 +40,26 @@ ls.snippets = {
     snip("cont", { -- Conjunto de las funciones continuas y de derivada n-esima continua
       text("\\mathcal{C}^{"), insert(1), text("}("), insert(2), text(")"), insert(0)
     }),
-    snip("frac", { -- Fracciones
+    snip("frac", { -- Fraccion
       text("\\frac{"), insert(1), text("}{"), insert(2), text("}"), insert(0)
     }),
-    snip("eq", { -- Ecuaciones
-      text("\\begin{equation}", ""), insert(1), text("\\end{equation}"), insert(0)
+    snip("eq", { -- Ecuacion
+      text("\\begin{equation}", ""),
+      insert(1), text("","\\end{equation}"), insert(0)
     }),
-    snip("lim", { -- Limites
+    snip("eq*", { -- Ecuacion sin numero
+      text("\\begin{equation*}", ""),
+      insert(1), text("", "\\end{equation*}"), insert(0)
+    }),
+    snip("align", { -- Alinear
+      text("\\begin{align}", ""),
+      insert(1), text("", "\\end{align}"), insert(0)
+    }),
+    snip("align*", { -- Alinear sin numero
+      text("\\begin{align*}", ""),
+      insert(1), text("", "\\end{align*}"), insert(0)
+    }),
+    snip("lim", { -- Limite
       text("\\lim_{"), insert(1, "n \\to \\infty"), text("}"), insert(0)
     }),
     snip("int", { -- Integral
@@ -58,9 +71,7 @@ ls.snippets = {
     snip("sqrt", { -- Raiz cuadrada
       text("\\sqrt{"), insert(1), text("}"), insert(0)
     }),
-    snip("sum", { -- Raiz cuadrada
-      text("\\sqrt{"), insert(1), text("}"), insert(0)
-    }),
+
     -- Letras griegas
     snip("\\a", {text("\\alpha")}),
     snip("\\b",{text("\\beta")}),
@@ -76,6 +87,17 @@ ls.snippets = {
     snip("\\c", {text("\\psi")}),
     snip("\\v", {text("\\omega")}),
     snip("\\dg", {text("\\digamma")}),
-    snip("\\e", {text("\\varepsilon")})
+    snip("\\e", {text("\\varepsilon")}),
+
+    -- Tipos de texto
+    snip("bf", { -- Negrita
+      text("\\textbf{"), insert(1), text("}"), insert(0)
+    }),
+    snip("mbf", { -- Negrita en matematicas
+      text("\\mathbf{"), insert(1), text("}"), insert(0)
+    }),
+    snip("it", { -- Italicas
+      text("\\textit{"), insert(1), text("}"), insert(0)
+    })
   }
 }
