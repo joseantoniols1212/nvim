@@ -33,6 +33,9 @@ ls.snippets = {
     snip("R", { -- Rn
       text("\\mathbb{R}^{"), insert(1, "n"), text("}"), insert(0)
     }),
+    snip("C", { -- Complejos
+      text("\\mathbb{C}^{"), insert(1), text("}"), insert(0)
+    }),
     snip("fun", { -- Funcion matematica
       text("\\("), insert(1), text("\\to "), insert(2), text(", "), insert(3),
       text(" \\)"), insert(0)
