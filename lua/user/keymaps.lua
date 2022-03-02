@@ -18,7 +18,7 @@ keymap("", ",", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
--- Use alt + hjkl to resize windows
+-- Use control + arrows to resize windows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
 keymap("n", "<C-Down>", ":resize +2<CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
@@ -58,7 +58,7 @@ keymap("n", "<Leader>e", ":NvimTreeToggle<CR>", opts)
 -- Telescope
 keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
 -- keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
--- TODO: keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
+keymap("n", "<leader>g", "<cmd>Telescope live_grep<cr>", opts)
 
 -- Formatting
 keymap("n", "<leader>t", ":lua vim.lsp.buf.formatting_sync()<cr>", opts)
