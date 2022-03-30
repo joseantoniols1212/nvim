@@ -62,3 +62,16 @@ keymap("n", "<leader>g", "<cmd>Telescope live_grep<cr>", opts)
 
 -- Formatting
 keymap("n", "<leader>t", ":lua vim.lsp.buf.formatting_sync()<cr>", opts)
+
+--Debugging
+keymap("n", "<leader>dd", ":call vimspector#launch()<CR>", opts)
+keymap("n", "<leader>de", ":call vimspector#Reset()<CR>", opts)
+keymap("n", "<leader>dc", ":call vimspector#Continue()<CR>", opts)
+
+keymap("n", "<leader>dt", ":call vimspector#ToggleBreakpoint()<CR>", opts)
+keymap("n", "<leader>dT", ":call vimspector#ClearBreakpoint()<CR>", opts)
+
+keymap("n", "<leader>dk", "<Plug>VimspectorRestart", opts)
+keymap("n", "<leader>dh", "<Plug>VimspectorStepOut", opts)
+keymap("n", "<leader>dl", "<Plug>VimspectorStepInto", opts)
+keymap("n", "<leader>dj", "<Plug>VimspectorStepOver", opts)

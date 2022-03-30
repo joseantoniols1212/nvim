@@ -76,6 +76,9 @@ return packer.startup(function(use)
   -- Telescope
   use "nvim-telescope/telescope.nvim"
 
+  -- Debugger
+  use "puremourning/vimspector"
+
   -- Treesitter
   use {
     "nvim-treesitter/nvim-treesitter",
