@@ -64,7 +64,7 @@ keymap("n", "<leader>g", "<cmd>Telescope live_grep<cr>", opts)
 keymap("n", "<leader>t", ":lua vim.lsp.buf.formatting_sync()<cr>", opts)
 
 --Debugging
-keymap("n", "<leader>dd", ":call vimspector#launch()<CR>", opts)
+keymap("n", "<leader>dd", ":call vimspector#Launch()<CR>", opts)
 keymap("n", "<leader>de", ":call vimspector#Reset()<CR>", opts)
 keymap("n", "<leader>dc", ":call vimspector#Continue()<CR>", opts)
 
