@@ -59,19 +59,3 @@ keymap("n", "<Leader>e", ":NvimTreeToggle<CR>", opts)
 keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
 -- keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
 keymap("n", "<leader>g", "<cmd>Telescope live_grep<cr>", opts)
-
--- Formatting
-keymap("n", "<leader>t", ":lua vim.lsp.buf.formatting_sync()<cr>", opts)
-
---Debugging
-keymap("n", "<leader>dd", ":call vimspector#Launch()<CR>", opts)
-keymap("n", "<leader>de", ":call vimspector#Reset()<CR>", opts)
-keymap("n", "<leader>dc", ":call vimspector#Continue()<CR>", opts)
-
-keymap("n", "<leader>dt", ":call vimspector#ToggleBreakpoint()<CR>", opts)
-keymap("n", "<leader>dT", ":call vimspector#ClearBreakpoint()<CR>", opts)
-
-keymap("n", "<leader>dk", "<Plug>VimspectorRestart", opts)
-keymap("n", "<leader>dh", "<Plug>VimspectorStepOut", opts)
-keymap("n", "<leader>dl", "<Plug>VimspectorStepInto", opts)
-keymap("n", "<leader>dj", "<Plug>VimspectorStepOver", opts)
