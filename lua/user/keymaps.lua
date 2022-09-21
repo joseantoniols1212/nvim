@@ -43,6 +43,12 @@ keymap("n", "<Leader>q", ":q<CR>", opts)
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
+-- Better begin/end line movement (insertion + normal mode)
+keymap("i", "<C-b>", "0", opts)
+keymap("i", "<C-e>", "$", opts)
+keymap("n", "<C-b>", "0", opts)
+keymap("n", "<C-e>", "$", opts)
+
 -- Better window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
