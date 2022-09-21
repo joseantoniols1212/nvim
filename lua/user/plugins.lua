@@ -53,6 +53,9 @@ return packer.startup(function(use)
   -- colorscheme
   use "lunarvim/darkplus.nvim"
 
+  -- impatient (speeds up lua modules load)
+  use 'lewis6991/impatient.nvim'
+
   -- lsp
   use "williamboman/mason.nvim"
   use "williamboman/mason-lspconfig.nvim"
