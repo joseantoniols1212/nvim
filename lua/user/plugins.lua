@@ -54,6 +54,9 @@ return packer.startup(function(use)
   -- colorscheme
   use "lunarvim/darkplus.nvim"
 
+  -- bufferline
+  use 'akinsho/bufferline.nvim'
+
   -- impatient (speeds up lua modules load)
   use 'lewis6991/impatient.nvim'
 
