@@ -49,6 +49,7 @@ return packer.startup(function(use)
   use 'kyazdani42/nvim-tree.lua' -- File explorer tree
   use "moll/vim-bbye" -- Bdelete command, it allows to close buffer without closing nvim
   use "numToStr/Comment.nvim" -- Easily comment stuff
+	use "nvim-lualine/lualine.nvim"
 
   -- colorscheme
   use "lunarvim/darkplus.nvim"

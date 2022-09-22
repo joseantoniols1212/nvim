@@ -23,4 +23,5 @@ vim.opt.timeoutlen = 500                     --  By default timeoutlen is 1000 m
 vim.opt.clipboard = "unnamedplus"            --  Copy paste between vim and everything else
 vim.opt.scrolloff = 10                       --  Offset between last line showed and window border
 vim.opt.termguicolors = true
-vim.opt.signcolumn = "yes"                   -- Always show signcolumn so it doesn't shift every time
+vim.opt.signcolumn = "yes"                   --  Always show signcolumn so it doesn't shift every time
+vim.opt.cmdheight = 1                        --  Set cmd height in lines
