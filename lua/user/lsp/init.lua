@@ -3,7 +3,7 @@ require("mason-lspconfig").setup()
 
 local lspconfig = require("lspconfig")
 
-local servers = { "sumneko_lua" }
+local servers = { "sumneko_lua", "jdtls", "rust_analyzer", "pylsp" }
 
 -- lsp client configuration
 

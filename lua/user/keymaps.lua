@@ -39,6 +39,9 @@ keymap("n", "<Leader>s", ":w<CR>", opts)
 -- Alternate way to quit
 keymap("n", "<Leader>q", ":q<CR>", opts)
 
+-- Remove highlighting
+keymap("n", "<Esc>", ":noh<CR>",opts)
+
 -- Better tabbing
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
@@ -65,3 +68,4 @@ keymap("n", "<Leader>e", ":NvimTreeToggle<CR>", opts)
 
 -- Telescope
 keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
+keymap("n", "<leader>g", "<cmd>Telescope live_grep<cr>", opts)

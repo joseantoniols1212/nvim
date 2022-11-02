@@ -50,9 +50,12 @@ return packer.startup(function(use)
   use "moll/vim-bbye" -- Bdelete command, it allows to close buffer without closing nvim
   use "numToStr/Comment.nvim" -- Easily comment stuff
 	use "nvim-lualine/lualine.nvim"
+  use "windwp/nvim-autopairs"
 
   -- colorscheme
   use "lunarvim/darkplus.nvim"
+  use "luisiacc/gruvbox-baby"
+  use 'folke/tokyonight.nvim'
 
   -- bufferline
   use 'akinsho/bufferline.nvim'
@@ -65,8 +68,13 @@ return packer.startup(function(use)
   use "williamboman/mason-lspconfig.nvim"
   use "neovim/nvim-lspconfig"
 
+  -- rust extra functionality
+  use "simrat39/rust-tools.nvim"
+
   -- cmp
   use "hrsh7th/nvim-cmp" -- completion plugin
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-nvim-lsp-signature-help'
 	use "hrsh7th/cmp-buffer" -- buffer completions
 	use "hrsh7th/cmp-path" -- path completions
 	use "saadparwaiz1/cmp_luasnip" -- snippet completions
